@@ -1,0 +1,42 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract Functions{
+    uint x;
+    uint y;
+
+    function FirstNo(uint _x) public {
+        x=_x;
+    }
+
+    function SecondNo(uint _y) public {
+        y=_y;
+    }
+
+    function add() public view returns (uint){
+        return x+y;
+    }
+    function sub() public view returns (uint){
+        if(x>y){
+            return x-y;
+        }
+        else{
+            return y-x;
+        }
+    }
+    function mul() public view returns (uint){
+        return x*y;
+    }
+    function div() public view returns (uint){
+        if(x>y){
+            return x/y;
+        }
+        else{
+            return y/x;
+        }
+    }
+
+
+
+
+}
